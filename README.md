@@ -345,3 +345,11 @@ int8_t  s = 0xFF;    // s = -1  (two's complement)
 
 **Course Navigation:**  
 ← Previous: [Chapter 6 - Complements](../ch6_complements/) | Next: [Chapter 8 - Binary Arithmetic](../ch8_binary_addition_subtraction/) →
+
+---
+
+## Authorship
+Authored by Maxwell Hauser on November 19, 2025
+
+## License
+MIT License
