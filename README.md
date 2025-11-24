@@ -30,14 +30,6 @@ This chapter explores different methods of representing signed (positive and neg
 
 ### Characteristics
 - **Sign:** No sign; all values are positive
-- **Range (n bits):** 0 to 2^n - 1
-- **Usage:** Counts, addresses, quantities that can't be negative
-
-### Examples (8-bit)
-```
-Binary      Decimal
-00000000  →    0
-00000001  →    1
 01111111  →  127
 10000000  →  128  (not -128!)
 11111111  →  255  (largest value)
@@ -52,24 +44,15 @@ Max: 11111111₂ = 255₁₀
 
 ## Signed Magnitude Representation
 
-### Characteristics
-- **MSB:** Sign bit (0=positive, 1=negative)
-- **Remaining bits:** Magnitude (absolute value)
-- **Intuitive:** Similar to how humans write numbers
-- **Problem:** Two representations of zero
 
-### Format (n bits)
 ```
 [Sign bit][Magnitude bits]
     1 bit    (n-1) bits
 ```
-
 ### Examples (8-bit)
 ```
-Binary      Sign  Magnitude  Value
-00000000  →  +      0      →   +0
 10000000  →  -      0      →   -0  (problem!)
-00000101  →  +      5      →   +5
+ <!-- License moved to dedicated LICENSE file -->
 10000101  →  -      5      →   -5
 01111111  →  +    127      → +127
 11111111  →  -    127      → -127
